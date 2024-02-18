@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.TextCore.Text;
+using TMPro;
 
 // basic WASD-style movement control
 // commented out line demonstrates that transform.Translate instead of charController.Move doesn't have collision detection
@@ -11,6 +13,7 @@ public class FPSInput : MonoBehaviour {
 	public float gravity = -9.8f;
 
 	private CharacterController _charController;
+
 	
 	void Start() {
 		_charController = GetComponent<CharacterController>();
